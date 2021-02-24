@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Jost";
   font-display: swap;
-  src: url("../fonts/Jost-Medium.woff") format("woff"), url("../fonts/Jost-Medium.woff2") format("woff2");
-  font-weight: 500;
+  src: url("../fonts/Jost-Bold.woff") format("woff"), url("../fonts/Jost-Bold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Jost";
   font-display: swap;
-  src: url("../fonts/Jost-Bold.woff") format("woff"), url("../fonts/Jost-Bold.woff2") format("woff2");
-  font-weight: 700;
+  src: url("../fonts/Jost-Medium.woff") format("woff"), url("../fonts/Jost-Medium.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -118,6 +118,11 @@ h6 {
   max-width: 1730px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.drop,
+.drop__mobile {
+  cursor: pointer;
 }
 
 .slick-list {
@@ -839,6 +844,9 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1076,6 +1084,9 @@ body.lock {
   background-repeat: no-repeat;
   width: 8px;
   height: 7px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .catalog .catalog-form__content-inputspan {
@@ -1084,10 +1095,10 @@ body.lock {
   height: 10px;
   border: 1px solid #aaaaaa;
   margin-left: -15px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
   opacity: 0;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
 }
 
 .catalog .catalog-form__item-title {
@@ -1123,25 +1134,6 @@ body.lock {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-}
-
-.catalog .catalog-form__item-titlenum {
-  margin-left: 5px;
-  width: 17px;
-  height: 17px;
-  background-color: #151515;
-  color: #fff;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 11px;
 }
 
 .drop__content.drop__content--active .catalog-form__content-inputspan {
