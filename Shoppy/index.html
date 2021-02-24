@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -6,14 +6,15 @@
 	<meta name="viewport"
 		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/jquery.rateyo.min.css" />
+
 	<link rel="stylesheet" href="css/style.min.css">
+
 	<title>Shoppy</title>
 </head>
 
 <body>
 	<div class="wrapper">
-
-
 		<header class="header" id="to-top">
 	<div class="container">
 		<div class="header__inner">
@@ -69,1068 +70,410 @@
 		</div>
 	</div>
 </header>
-
-		<section class="hero">
-			<div class="container">
-				<div class="hero__slider">
-					<div class="hero__slider-item">
-						<div class="hero__slider-img">
-							<picture><source srcset="img/content/girl-1.webp" type="image/webp"><img src="img/content/girl-1.png" alt=""></picture>
-						</div>
-						<div class="hero__slider-text">
-							<div class="hero__slider-title">
-								-60% на кожаные куртки
-							</div>
-							<div class="hero__slider-suptitle">
-								Успей обновить свой гардероб
-							</div>
-						</div>
-
-					</div>
-					<div class="hero__slider-item">
-						<div class="hero__slider-img">
-							<picture><source srcset="img/content/girl-2.webp" type="image/webp"><img src="img/content/girl-2.png" alt=""></picture>
-						</div>
-						<div class="hero__slider-text">
-							<div class="hero__slider-title">
-								-10% на жилеты
-							</div>
-							<div class="hero__slider-suptitle">
-								Лучшая вещь в твой гардероб
-							</div>
-						</div>
-
-					</div>
-					<div class="hero__slider-item">
-						<div class="hero__slider-img">
-							<picture><source srcset="img/content/girl-3.webp" type="image/webp"><img src="img/content/girl-3.png" alt=""></picture>
-						</div>
-						<div class="hero__slider-text">
-							<div class="hero__slider-title">
-								Новые комбинезоны
-							</div>
-							<div class="hero__slider-suptitle">
-								Покупай сейчас
-							</div>
-						</div>
-
-					</div>
-
+		<div class="breadcrumbs to-top__on">
+			<div class="product-container">
+				<div class="breadcrumbs__inner mobile-overflow__scroll">
+					<ul class="breadcrumbs__list mobile-overflow">
+						<li class="breadcrumbs__list-item">
+							<a href="#">Главная </a>
+						</li>
+						<li class="breadcrumbs__list-item">
+							<a href="#"> Женское </a>
+						</li>
+						<li class="breadcrumbs__list-item">
+							<a href="#"> Куртки </a>
+						</li>
+						<li class="breadcrumbs__list-item">
+							<span> Love&Live</span>
+						</li>
+					</ul>
 				</div>
+			</div>
+		</div>
+
+		<section class="card">
+			<div class="product-container">
+				<div class="card-inner">
+					<div class="card-inner__slider-box card-slider">
+						<div class="card-slider__big">
+							<div class="card-slider__big-item">
+								<picture><source srcset="img/content/product-page-img-small-1.webp" type="image/webp"><img src="img/content/product-page-img-small-1.jpg" alt=""></picture>
+							</div>
+							<div class="card-slider__big-item">
+								<picture><source srcset="img/content/product-page-img-small-2.webp" type="image/webp"><img src="img/content/product-page-img-small-2.jpg" alt=""></picture>
+							</div>
+							<div class="card-slider__big-item">
+								<picture><source srcset="img/content/product-page-img-small-3.webp" type="image/webp"><img src="img/content/product-page-img-small-3.jpg" alt=""></picture>
+							</div>
+							<div class="card-slider__big-item">
+								<picture><source srcset="img/content/product-page-img-small-4.webp" type="image/webp"><img src="img/content/product-page-img-small-4.jpg" alt=""></picture>
+							</div>
+							<div class="card-slider__big-item">
+								<picture><source srcset="img/content/product-page-img-small-5.webp" type="image/webp"><img src="img/content/product-page-img-small-5.jpg" alt=""></picture>
+							</div>
+						</div>
+						<div class="card-slider__nav">
+							<div class="card-slider__nav-item">
+								<picture><source srcset="img/content/product-page-img-1.webp" type="image/webp"><img src="img/content/product-page-img-1.jpg" alt=""></picture>
+							</div>
+							<div class="card-slider__nav-item">
+								<picture><source srcset="img/content/product-page-img-2.webp" type="image/webp"><img src="img/content/product-page-img-2.jpg" alt=""></picture>
+							</div>
+							<div class="card-slider__nav-item">
+								<picture><source srcset="img/content/product-page-img-3.webp" type="image/webp"><img src="img/content/product-page-img-3.jpg" alt=""></picture>
+							</div>
+							<div class="card-slider__nav-item">
+								<picture><source srcset="img/content/product-page-img-4.webp" type="image/webp"><img src="img/content/product-page-img-4.jpg" alt=""></picture>
+							</div>
+							<div class="card-slider__nav-item">
+								<picture><source srcset="img/content/product-page-img-5.webp" type="image/webp"><img src="img/content/product-page-img-5.jpg" alt=""></picture>
+							</div>
+						</div>
+					</div>
+					<div class="card-inner__content">
+						<div class="card-inner__content-text card-content">
+							<div class="card-content__best">
+								best seller
+							</div>
+							<div class="card-content__title">
+								Love&Live
+							</div>
+							<div class="card-content__star">
+
+								<a class="rate" id="rateYo" href="#" data-rateyo-rating="4"></a>
+
+								<span class="card-content__star-review">
+									2 отзыва
+								</span>
+							</div>
+							<div class="card-content__price">
+								$20.00 <span class="card-content__price-old"> $100.00</span>
+							</div>
+							<div class="card-content__descr">
+								Демисезонная куртка Love&Live будет согревать Вас в любую погоду!
+							</div>
+						</div>
+						<div class="card-inner__content-color color-select">
+							<p class="color-select__selected">
+								Цвет: <span class="color-select__selected-color">коричневый</span>
+							</p>
+							<ul class="color-select__list">
+								<li class="color-select__item"><button class="color-select__btn btn-reset" data-color="серый"
+										style="background-color:gray;"></button></li>
+
+								<li class="color-select__item"><button class="color-select__btn btn-reset"
+										data-color="оранжевый" style="background-color:orange;"></button></li>
+
+								<li class="color-select__item"><button class="color-select__btn   btn-reset" data-color="белый"
+										style="background-color:white;"></button></li>
+								<li class="color-select__item"><button class="color-select__btn btn-reset" data-color="черный"
+										style="background-color:black;"></button></li>
+								<li class="color-select__item"><button class="color-select__btn btn-reset" data-color="красный"
+										style="background-color:red;"></button></li>
+								<li class="color-select__item"><button
+										class="color-select__btn btn-reset color-select__btn--active" data-color="коричневый"
+										style="background-color:brown;"></button></li>
+								<li class="color-select__item"><button class="color-select__btn btn-reset"
+										data-color="фиолетовый" style="background-color:purple;"></button></li>
+
+								<li class="color-select__item"><button class="color-select__btn btn-reset" data-color="зеленый"
+										style="background-color:green;"></button></li>
+							</ul>
+						</div>
+						<div class="card-inner__content-size size-select">
+							<p class="size-select__title drop">
+								Доступные размеры
+							</p>
+							<ul class="size-select__list drop__content">
+								<li class="size-select__list-item"><span class="size-select__list-span">S</span></li>
+								<li class="size-select__list-item"><span class="size-select__list-span">M</span></li>
+								<li class="size-select__list-item"><span class="size-select__list-span">L</span></li>
+								<li class="size-select__list-item"><span class="size-select__list-span">XL</span></li>
+							</ul>
+						</div>
+						<div class="card-inner__content-descr card-descr">
+							<p class="card-descr__title drop">
+								О товаре
+							</p>
+							<ul class="card-descr__list drop__content">
+								<li class="card-descr__list-item"><span class="card-descr__list-label">Состав: </span><span
+										class="card-descr__list-value">полиэстер </span></li>
+
+								<li class="card-descr__list-item"><span class="card-descr__list-label">Сезон: </span><span
+										class="card-descr__list-value">демисезон</span></li>
+								<li class="card-descr__list-item"><span class="card-descr__list-label">Срок
+										годности: </span><span class="card-descr__list-value">не установлен</span> </li>
+								<li class="card-descr__list-item"><span class="card-descr__list-label">Срок службы: </span><span
+										class="card-descr__list-value"> не установлен</span></li>
+								<li class="card-descr__list-item"><span class="card-descr__list-label">Гарантийный
+										период: </span><span class="card-descr__list-value"> 30 дней</span></li>
+							</ul>
+						</div>
+						<div class="card-inner__content-btn card-btn">
+							<button class="card-btn__basket">
+								Добавить в корзину
+							</button>
+							<button class="card-btn__favorite">
+
+							</button>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</section>
-		<section class="shop-banner">
-			<div class="shop-banner__item">
-				<picture><source srcset="img/content/shop-banner-1.webp" type="image/webp"><img class="shop-banner__img" src="img/content/shop-banner-1.jpg" alt=""></picture>
-				<div class="shop-banner__descr">
-					<span class="shop-banner__descrtext">
-						<h2 class="shop-banner__descr-title">Мужская одежда</h2>
-						<a class="shop-banner__descr-link" href="#">Подробнее</a>
-					</span>
-				</div>
-			</div>
-			<div class="shop-banner__item">
-				<picture><source srcset="img/content/shop-banner-2.webp" type="image/webp"><img class="shop-banner__img" src="img/content/shop-banner-2.jpg" alt=""></picture>
-				<div class="shop-banner__descr">
-					<span class="shop-banner__descrtext">
-						<h2 class="shop-banner__descr-title">Аксессуары</h2>
-						<a class="shop-banner__descr-link" href="#">Подробнее</a>
-					</span>
-				</div>
-			</div>
-		</section>
 
-		<section class="product">
-			<div class="container">
-				<div class="tabs-wrapper">
-					<div class="product__tabs tabs">
-						<a class="product__tab tab tab--active" href="#product-tab-1">Хит продаж </a>
-						<a class="product__tab tab " href="#product-tab-2">Новинки</a>
-						<a class="product__tab tab " href="#product-tab-3">Лучшие скидки</a>
+		<section class="card-similar">
+			<div class="product-container">
+				<p class="card-similar__title">
+					Похожие товары
+				</p>
+				<div class="card-similar__slider similar-slider">
+					<div class="similar-slider__item">
+						<div class="product__inner-item product__item product__item--not-new product__item--not-oldprice">
+							<div class="product__item-imgcontainer">
+								<picture><source srcset="img/content/product-1.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-1.jpg" alt=""></picture>
+								<div class="product__item-imgdescr product-img__descr">
+									<a class="product-img__descr-link" href="#">
+										Подробнее
+									</a>
+								</div>
+								<span class="product__item-sale">-50%</span>
+								<button class="product__item-favorite"></button>
+							</div>
+							<div class="product__item-text">
+								<div class="product__item-textnew">
+									New
+								</div>
+								<div class="product__item-textdescr">
+									Блуза
+								</div>
+								<div class="product__item-textprice item__price">
+									<div class="item__price-now">
+										$22.00
+									</div>
+									<div class="item__price-old">
+										$30.00
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="tabs-container">
-						<div id="product-tab-1" class="tabs-content tabs-content--active">
-							<div class="product__inner">
-								<div class="product__inner-item product__item product__item--not-oldprice">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-1.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-1.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-10%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Блуза
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$2.00
-											</div>
-											<div class="item__price-old">
-												$10.00
-											</div>
-										</div>
-									</div>
+					<div class="similar-slider__item">
+						<div class="product__inner-item product__item product__item--not-new ">
+							<div class="product__item-imgcontainer">
+								<picture><source srcset="img/content/product-2.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-2.jpg" alt=""></picture>
+								<div class="product__item-imgdescr product-img__descr">
+									<a class="product-img__descr-link" href="#">
+										Подробнее
+									</a>
 								</div>
-								<div class="product__inner-item product__item product__item--not-new   ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-2.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-2.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-30%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Блуза
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$12.00
-											</div>
-											<div class="item__price-old">
-												$20.00
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product__inner-item product__item ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-3.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-3.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-30%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Пальто
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product__inner-item product__item product__item--not-new   ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-4.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-4.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-30%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Куртка
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$12.00
-											</div>
-											<div class="item__price-old">
-												$50.00
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product__inner-item product__item ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-5.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-5.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-30%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Куртка
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$11.00
-											</div>
-											<div class="item__price-old">
-												$31.00
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product__inner-item product__item product__item--not-new   ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-6.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-6.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-30%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Пиджак
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$7.00
-											</div>
-											<div class="item__price-old">
-												$35.00
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product__inner-item product__item  product__item--not-oldprice">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-7.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-7.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-30%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Платье
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$2.00
-											</div>
-											<div class="item__price-old">
-												$3.00
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product__inner-item product__item product__item--not-new   ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-8.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-8.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-30%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Пальто
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product__inner-item product__item product__item--not-oldprice">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-9.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-9.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-30%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Кофта
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product__inner-item product__item product__item--not-new   ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-10.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-10.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-30%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Пиджак
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
-									</div>
-								</div>
-
+								<span class="product__item-sale">-50%</span>
+								<button class="product__item-favorite"></button>
 							</div>
-							<div class="product__more">
-								<a class="product__more-link" href="#">Узнать больше
-									<picture><source srcset="img/down.svg" type="image/webp"><img class="product__more-img" src="img/down.svg" alt=""></picture></a>
-							</div>
-						</div>
-						<div id="product-tab-2" class="tabs-content">
-							<div class="product__inner">
-								<div class="product__inner-item product__item   ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-11.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-11.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-30%</span>
-										<button class="product__item-favorite"></button>
+							<div class="product__item-text">
+								<div class="product__item-textnew">
+									New
+								</div>
+								<div class="product__item-textdescr">
+									Блуза
+								</div>
+								<div class="product__item-textprice item__price">
+									<div class="item__price-now">
+										$22.00
 									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Майка
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
+									<div class="item__price-old">
+										$30.00
 									</div>
 								</div>
-								<div class="product__inner-item product__item   ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-12.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-12.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-30%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Ботинки
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product__inner-item product__item   ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-13.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-13.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-30%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Кроссовки
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product__inner-item product__item   ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-14.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-14.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-30%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Шубка
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product__inner-item product__item   ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-15.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-15.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-30%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Платье
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product__inner-item product__item   ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-16.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-16.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-30%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Шапка
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product__inner-item product__item   ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-17.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-17.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-30%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Куртка
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product__inner-item product__item   ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-18.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-18.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-30%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Куртка
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product__inner-item product__item   ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-19.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-19.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-30%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Куртка
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product__inner-item product__item   ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-20.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-20.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-30%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Куртка
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="product__more">
-								<a class="product__more-link" href="#">Узнать больше
-									<picture><source srcset="img/down.svg" type="image/webp"><img class="product__more-img" src="img/down.svg" alt=""></picture></a>
 							</div>
 						</div>
-						<div id="product-tab-3" class="tabs-content">
-							<div class="product__inner">
-								<div class="product__inner-item product__item product__item--not-new ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-10.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-10.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-30%</span>
-										<button class="product__item-favorite"></button>
+					</div>
+					<div class="similar-slider__item">
+						<div class="product__inner-item product__item product__item--not-new product__item--not-oldprice">
+							<div class="product__item-imgcontainer">
+								<picture><source srcset="img/content/product-3.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-3.jpg" alt=""></picture>
+								<div class="product__item-imgdescr product-img__descr">
+									<a class="product-img__descr-link" href="#">
+										Подробнее
+									</a>
+								</div>
+								<span class="product__item-sale">-50%</span>
+								<button class="product__item-favorite"></button>
+							</div>
+							<div class="product__item-text">
+								<div class="product__item-textnew">
+									New
+								</div>
+								<div class="product__item-textdescr">
+									Пальто
+								</div>
+								<div class="product__item-textprice item__price">
+									<div class="item__price-now">
+										$22.00
 									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Пиджак
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
+									<div class="item__price-old">
+										$30.00
 									</div>
 								</div>
-								<div class="product__inner-item product__item product__item--not-new ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-1.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-1.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-35%</span>
-										<button class="product__item-favorite"></button>
+							</div>
+						</div>
+					</div>
+					<div class="similar-slider__item">
+						<div class="product__inner-item product__item product__item--not-new ">
+							<div class="product__item-imgcontainer">
+								<picture><source srcset="img/content/product-4.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-4.jpg" alt=""></picture>
+								<div class="product__item-imgdescr product-img__descr">
+									<a class="product-img__descr-link" href="#">
+										Подробнее
+									</a>
+								</div>
+								<span class="product__item-sale">-50%</span>
+								<button class="product__item-favorite"></button>
+							</div>
+							<div class="product__item-text">
+								<div class="product__item-textnew">
+									New
+								</div>
+								<div class="product__item-textdescr">
+									Куртка
+								</div>
+								<div class="product__item-textprice item__price">
+									<div class="item__price-now">
+										$22.00
 									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Блуза
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
+									<div class="item__price-old">
+										$30.00
 									</div>
 								</div>
-								<div class="product__inner-item product__item product__item--not-new ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-19.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-19.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-50%</span>
-										<button class="product__item-favorite"></button>
+							</div>
+						</div>
+					</div>
+					<div class="similar-slider__item">
+						<div class="product__inner-item product__item product__item--not-new product__item--not-oldprice">
+							<div class="product__item-imgcontainer">
+								<picture><source srcset="img/content/product-5.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-5.jpg" alt=""></picture>
+								<div class="product__item-imgdescr product-img__descr">
+									<a class="product-img__descr-link" href="#">
+										Подробнее
+									</a>
+								</div>
+								<span class="product__item-sale">-50%</span>
+								<button class="product__item-favorite"></button>
+							</div>
+							<div class="product__item-text">
+								<div class="product__item-textnew">
+									New
+								</div>
+								<div class="product__item-textdescr">
+									Куртка
+								</div>
+								<div class="product__item-textprice item__price">
+									<div class="item__price-now">
+										$22.00
 									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Куртка
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
+									<div class="item__price-old">
+										$30.00
 									</div>
 								</div>
-								<div class="product__inner-item product__item product__item--not-new ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-2.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-2.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-70%</span>
-										<button class="product__item-favorite"></button>
+							</div>
+						</div>
+					</div>
+					<div class="similar-slider__item">
+						<div class="product__inner-item product__item product__item--not-new product__item--not-oldprice">
+							<div class="product__item-imgcontainer">
+								<picture><source srcset="img/content/product-6.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-6.jpg" alt=""></picture>
+								<div class="product__item-imgdescr product-img__descr">
+									<a class="product-img__descr-link" href="#">
+										Подробнее
+									</a>
+								</div>
+								<span class="product__item-sale">-50%</span>
+								<button class="product__item-favorite"></button>
+							</div>
+							<div class="product__item-text">
+								<div class="product__item-textnew">
+									New
+								</div>
+								<div class="product__item-textdescr">
+									Пиджак
+								</div>
+								<div class="product__item-textprice item__price">
+									<div class="item__price-now">
+										$22.00
 									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Блуза
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
+									<div class="item__price-old">
+										$30.00
 									</div>
 								</div>
-								<div class="product__inner-item product__item product__item--not-new ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-5.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-5.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-30%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Куртка
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
-									</div>
+							</div>
+						</div>
+					</div>
+					<div class="similar-slider__item">
+						<div class="product__inner-item product__item product__item--not-new ">
+							<div class="product__item-imgcontainer">
+								<picture><source srcset="img/content/product-7.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-7.jpg" alt=""></picture>
+								<div class="product__item-imgdescr product-img__descr">
+									<a class="product-img__descr-link" href="#">
+										Подробнее
+									</a>
 								</div>
-								<div class="product__inner-item product__item product__item--not-new ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-7.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-7.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-33%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Платье
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
-									</div>
+								<span class="product__item-sale">-50%</span>
+								<button class="product__item-favorite"></button>
+							</div>
+							<div class="product__item-text">
+								<div class="product__item-textnew">
+									New
 								</div>
-								<div class="product__inner-item product__item product__item--not-new ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-15.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-15.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-10%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Платье
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
-									</div>
+								<div class="product__item-textdescr">
+									Платье
 								</div>
-								<div class="product__inner-item product__item product__item--not-new ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-3.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-3.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-90%</span>
-										<button class="product__item-favorite"></button>
+								<div class="product__item-textprice item__price">
+									<div class="item__price-now">
+										$22.00
 									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Пальто
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product__inner-item product__item product__item--not-new ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-11.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-11.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-35%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Майка
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product__inner-item product__item product__item--not-new ">
-									<div class="product__item-imgcontainer">
-										<picture><source srcset="img/content/product-17.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-17.jpg" alt=""></picture>
-										<div class="product__item-imgdescr product-img__descr">
-											<a class="product-img__descr-link" href="#">
-												Подробнее
-											</a>
-										</div>
-										<span class="product__item-sale">-50%</span>
-										<button class="product__item-favorite"></button>
-									</div>
-									<div class="product__item-text">
-										<div class="product__item-textnew">
-											New
-										</div>
-										<div class="product__item-textdescr">
-											Куртка
-										</div>
-										<div class="product__item-textprice item__price">
-											<div class="item__price-now">
-												$22.00
-											</div>
-											<div class="item__price-old">
-												$30.00
-											</div>
-										</div>
+									<div class="item__price-old">
+										$30.00
 									</div>
 								</div>
 							</div>
-							<div class="product__more">
-								<a class="product__more-link" href="#">Узнать больше
-									<picture><source srcset="img/down.svg" type="image/webp"><img class="product__more-img" src="img/down.svg" alt=""></picture></a>
+						</div>
+					</div>
+					<div class="similar-slider__item">
+						<div class="product__inner-item product__item product__item--not-new product__item--not-oldprice">
+							<div class="product__item-imgcontainer">
+								<picture><source srcset="img/content/product-8.webp" type="image/webp"><img class="product__item-img product-img" src="img/content/product-8.jpg" alt=""></picture>
+								<div class="product__item-imgdescr product-img__descr">
+									<a class="product-img__descr-link" href="#">
+										Подробнее
+									</a>
+								</div>
+								<span class="product__item-sale">-50%</span>
+								<button class="product__item-favorite"></button>
+							</div>
+							<div class="product__item-text">
+								<div class="product__item-textnew">
+									New
+								</div>
+								<div class="product__item-textdescr">
+									Пальто
+								</div>
+								<div class="product__item-textprice item__price">
+									<div class="item__price-now">
+										$22.00
+									</div>
+									<div class="item__price-old">
+										$30.00
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="banner to-top__on">
-			<div class="container">
-				<div class="banner__inner">
-					<div class="banner__inner-item banner__item">
-						<div class="banner__item-text">
-							<div class="banner__item-title">
-								Теплые худи
-							</div>
-							<a class="banner__item-link" href="#">
-								Купить
-							</a>
-						</div>
-						<div class="banner__item-img">
-							<picture><source srcset="img/content/banner-1.webp" type="image/webp"><img src="img/content/banner-1.png" alt=""></picture>
-						</div>
-					</div>
-					<div class="banner__inner-item banner__item">
-						<div class="banner__item-text">
-							<div class="banner__item-title">
-								Джинсовые куртки
-							</div>
-							<a class="banner__item-link" href="#">
-								Купить
-							</a>
-						</div>
-						<div class="banner__item-img">
-							<picture><source srcset="img/content/banner-2.webp" type="image/webp"><img src="img/content/banner-2.png" alt=""></picture>
-						</div>
-					</div>
-					<div class="banner__inner-item banner__item">
-						<div class="banner__item-text">
-							<div class="banner__item-title">
-								До -90% на юбки
-							</div>
-							<a class="banner__item-link" href="#">
-								Купить
-							</a>
-						</div>
-						<div class="banner__item-img">
-							<picture><source srcset="img/content/banner-3.webp" type="image/webp"><img src="img/content/banner-3.png" alt=""></picture>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="contact">
-			<div class="container">
-				<div class="contact__inner">
-					<div class="contact__inner-service service-box">
-						<div class="service-box__list-title service-box drop__mobile">
-							Для клинента
-						</div>
-						<ul class="service-box__list drop__mobile-content">
 
-							<li class="service-box__list-item">
-								<a class="service-box__list-link" href="#">
-									Чат с консультантом
-								</a>
-							</li>
-							<li class="service-box__list-item">
-								<a class="service-box__list-link" href="#">
-									О нас
-								</a>
-							</li>
-							<li class="service-box__list-item">
-								<a class="service-box__list-link" href="#">
-									Условия и положения
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="contact__inner-company company-box ">
-						<div class="company-box-title drop__mobile">
-							О компании
-						</div>
-						<ul class="company-box__list drop__mobile-content">
-							<li class="company-box__list-item">
-								<a class="company-box__list-link" href="#">
-									Что мы делаем
-								</a>
-							</li>
-							<li class="company-box__list-item">
-								<a class="company-box__list-link" href="#">
-									Доступные услуги
-								</a>
-							</li>
-							<li class="company-box__list-item">
-								<a class="company-box__list-link" href="#">
-									Последние посты
-								</a>
-							</li>
-							<li class="company-box__list-item">
-								<a class="company-box__list-link" href="#">
-									FAQs
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="contact__inner-newsletter newsletter-box">
-						<div class="newsletter-box__title ">
-							Онлайн рассылка
-						</div>
-						<div class="newsletter-box__sale">
-							Подпишитесь на нашу рассылку и получите -7% на все товары
-						</div>
-						<form class="newsletter-box__form">
-							<input class="newsletter-box__form-input" type="text" placeholder="Email ">
-							<button class="newsletter-box__form-btn" type="submit">Подписать</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
+
 
 		<footer class="footer">
 	<div class="container">
@@ -1162,8 +505,11 @@
 			<picture><source srcset="img/arrow-top.svg" type="image/webp"><img src="img/arrow-top.svg" alt=""></picture>
 		</a>
 	</div>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.rateyo.min.js"></script>
+
 	<script src="js/script.min.js"></script>
 </body>
 
